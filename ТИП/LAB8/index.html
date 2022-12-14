@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 8 - Task</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <p>Made by Korotkevich Timophey, ASOI-191</p>
+  </header>
+
+  <main>
+    <table>
+      <tr>
+        <td><label for="surname">Фамилия</label></td>
+        <td><input type="text" name="surname" id="surname" tabindex="1"></td>
+      </tr>
+      <tr>
+        <td><label for="date">Дата</label></td>
+        <td><input type="date" name="date" id="date" value="2022-01-01" tabindex="2"></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="submit" value="Добавить сотрудника" tabindex="3" onclick="AddEmployee()">
+        </td>
+      </tr>
+    </table>
+
+    <br>
+
+    <table>
+      <tr>
+        <td><input type="radio" name="instruction" id="instruction-1" tabindex="4" value="1" checked></td>
+        <td><label for="instruction-1">Дата начала и окончания отпуска для каждого из сотрудников;</label></td>
+      </tr>
+      <tr>
+        <td><input type="radio" name="instruction" id="instruction-2" tabindex="5" value="2"></td>
+        <td><label for="instruction-2">Фамилии сотрудников, отпуск которым будет предоставлен в заданном месяце;</label></td>
+      </tr>
+      <tr>
+        <td><input type="radio" name="instruction" id="instruction-3" tabindex="6" value="3"></td>
+        <td><label for="instruction-3">Фамилии сотрудников, отпуск которых будет завершен в заданном квартале;</label></td>
+      </tr>
+      <tr>
+        <td><input type="radio" name="instruction" id="instruction-4" tabindex="7" value="4"></td>
+        <td><label for="instruction-4">Фамилии сотрудников, отпуск которым будет предоставлен в следующем каледарном году;</label></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="submit" value="Выполнить" tabindex="8" onclick="Tasks();">
+        </td>
+      </tr>
+    </table>
+
+    <p id="result"></р1>
+
+  </main>
+  
+  <script src="./main.js"></script>
+</body>
+</html>

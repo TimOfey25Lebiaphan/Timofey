@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 3 - Task 2</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <a href="./task1.html">Task 1</a>
+      <a href="./task2.html">Task 2</a>
+    </div>
+  </header>
+
+  <main>
+    <p><strong>Задание: </strong>напишите сценарий, который для точки, заданной координатами на плоскости, определяет расстояние до начала координат.</p>
+
+    <b>[<label for="x">X</label> , <label for="y">Y</label>]</b>
+    <input type="number" name="x" id="x" value="0" onselect="Task2()">
+    <input type="number" name="y" id="y" value="0" onselect="Task2()">
+
+
+    <button onclick="Castling('x','y')" onblur="Castling('x','y')">Переставить</button>
+
+    <p><strong>Ответ:</strong> <span id="answer"></span></p>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+</html>

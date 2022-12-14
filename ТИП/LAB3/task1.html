@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 3 - Task 1</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <a href="./task1.html">Task 1</a>
+      <a href="./task2.html">Task 2</a>
+    </div>
+  </header>
+
+  <main>
+    <p><strong>Задание: </strong>на плоскости заданы координаты трех точек. Напишите сценарий,
+      который вычисляет площадь треугольника.</p>
+    <div>
+      <strong><label for="x1">X1</label></strong>
+      <input type="number" name="x1" id="x1" value="0">
+      <strong><label for="y1">Y1</label></strong>
+      <input type="number" name="y1" id="y1" value="0">
+    </div>
+
+    <div>
+      <strong><label for="x2">X2</label></strong>
+      <input type="number" name="x2" id="x2" value="0">
+      <strong><label for="y2">Y2</label></strong>
+      <input type="number" name="y2" id="y2" value="0">
+    </div>
+
+    <div>
+      <strong><label for="x3">X3</label></strong>
+      <input type="number" name="x3" id="x3" value="0">
+      <strong><label for="y3">Y3</label></strong>
+      <input type="number" name="y3" id="y3" value="0">
+    </div>
+    <button onclick="Task1()" onfocus="Task1()">Вычислить:</button>
+
+    <p><strong>Ответ:</strong> <span id="answer"></span></p>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+</html>
