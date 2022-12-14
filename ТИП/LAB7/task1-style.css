@@ -1,0 +1,87 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.lab4-header {
+    background: rgb(29, 27, 27);
+    margin: 0;
+}
+
+.start {
+    position: absolute;
+    top: 55%;
+    left: 48%;
+    width: 100px;
+    height: 100px;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    transition: 0.5s linear;
+    background-color: rgb(65, 60, 60);
+    color:rgb(24, 185, 24);
+    animation:pulse 1s alternate infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	}
+
+	100% {
+		transform: scale(0.95);
+        border: 5px solid rgb(24, 185, 24);
+		box-shadow: 0 0 30px rgb(24, 185, 24);
+	}
+}
+
+.start:hover{
+    cursor: pointer;
+}
+
+.header-link {
+    text-decoration: none;
+    color: rgb(24, 185, 24);
+    transition: 0.5s linear;
+}
+
+.header-link:hover{
+    filter: drop-shadow(0 0 2px rgb(24, 185, 24));
+}
+
+.lab4-main {
+    position: relative;
+    margin: 0;
+    height: 100%;
+    background-image: url(background.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lab4-footer{
+    background: rgb(65, 60, 60);
+    width: 100%;
+    height: 57;
+    position: fixed;
+    bottom: 0;
+    color:rgb(24, 185, 24);
+
+}
+
+.lab4-footer p:hover{
+    filter: drop-shadow(0 0 2px rgb(24, 185, 24));
+    transition: 0.5s linear;
+}
+
+.form{
+    background:rgb(65, 60, 60) ;
+    color: rgb(4, 146, 4);
+}
+
+select{
+    background:rgb(65, 60, 60) ;
+    color: rgb(4, 146, 4);
+}

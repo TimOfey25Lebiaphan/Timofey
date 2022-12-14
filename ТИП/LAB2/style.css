@@ -1,0 +1,75 @@
+:root{
+  --body-bg-color: #d4d4d4;
+  --header-text-color: #fff;
+  --hover-color: #ffbb00;
+}
+
+body{
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--body-bg-color);
+}
+
+footer{
+  margin: 0;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: green;
+}
+
+header{
+  margin: 0;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+}
+header h1, a{
+  margin: 0;
+  font: bold 30pt Times;
+  color: var(--header-text-color);
+}
+header a{
+  margin-left: 15px;
+  text-decoration: none;
+}
+header a:hover{
+  color: var(--hover-color);
+}
+
+
+
+main{
+  flex: auto;
+  margin: 0 15px;
+  padding: 10px;
+  display: flex;
+  background-color: #fff;
+}
+
+main div{
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main div h1{
+  margin: 0;
+  padding: 5px 40px;
+  font: bold 80pt Times;
+  color: blue;
+  border: 10px dashed orangered;
+  border-radius: 50px;
+}
+
+main div h1:hover{
+  color: var(--hover-color);
+  border-color:  var(--hover-color);
+  cursor: pointer;
+}
